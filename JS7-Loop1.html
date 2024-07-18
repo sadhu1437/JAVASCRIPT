@@ -1,0 +1,51 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+</head>
+<body>
+    <script>
+        var c=1;
+        while(c<10){
+            document.write("<br>"+c);
+            c++;
+        }
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        canvas{
+            background-color: green;
+            width: 500;
+            height: 500;
+        }
+    </style> -->
+</head>
+<body>
+    <canvas id="canvas" width="500" height="500" style="background-color:green">
+    </canvas>
+    <script>
+        var canvas=document.getElementById("canvas");
+        var ctx=canvas.getContext("2d");
+        var radius=200;
+        ctx.translate(250,250);
+        function drawClock(ctx,radius){
+            ctx.beginPath();
+            ctx.arc(0,0,radius,0,2*Math.PI);
+            ctx.stroke();
+            ctx.fillStyle="white";
+        }
+    </script>
+</body>
+</html>
